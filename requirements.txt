@@ -1,6 +1,4 @@
-asgiref==3.9.1
-Django==4.2.24
-django-robots==6.1
-gunicorn==23.0.0
-packaging==25.0
-sqlparse==0.5.3
+asgiref==3.11.1
+Django==5.2.13
+python-decouple==3.8
+sqlparse==0.5.5
