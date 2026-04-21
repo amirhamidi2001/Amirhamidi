@@ -4,9 +4,9 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Portfolio - FolioOne Bootstrap Template</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <title>Portfolio - Amir Hamidi</title>
+    <meta name="description" content="Amir Hamidi's portfolio - web development projects including e-commerce, blog, API, and branding." />
+    <meta name="keywords" content="Amir Hamidi, portfolio, Django, e-commerce, web development, API" />
 
     <!-- Favicons -->
     <link href="{% static 'assets/img/favicon.png' %}" rel="icon" />
@@ -26,24 +26,11 @@
 
     <!-- Main CSS File -->
     <link href="{% static 'assets/css/main.css' %}" rel="stylesheet" />
-
-    <!--  =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ========================================================  -->
   </head>
 
   <body class="portfolio-page">
     <header id="header" class="header d-flex align-items-center light-background sticky-top">
       <div class="container position-relative d-flex align-items-center justify-content-between">
-        <!--  <a href="{% url 'website:index' %}" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="{% static 'assets/img/logo.webp' %}" alt="">
-      <h1 class="sitename">FolioOne</h1> 
-    </a>  -->
-
         <nav id="navmenu" class="navmenu">
           <ul>
             <li>
@@ -60,43 +47,6 @@
             </li>
             <li>
               <a href="{% url 'website:portfolio' %}" class="active">Portfolio</a>
-            </li>
-            <li class="dropdown">
-              <a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li>
-                  <a href="#">Dropdown 1</a>
-                </li>
-                <li class="dropdown">
-                  <a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li>
-                      <a href="#">Deep Dropdown 1</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Dropdown 2</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Dropdown 3</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Dropdown 4</a>
-                    </li>
-                    <li>
-                      <a href="#">Deep Dropdown 5</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">Dropdown 2</a>
-                </li>
-                <li>
-                  <a href="#">Dropdown 3</a>
-                </li>
-                <li>
-                  <a href="#">Dropdown 4</a>
-                </li>
-              </ul>
             </li>
             <li>
               <a href="{% url 'website:contact' %}">Contact</a>
@@ -120,7 +70,7 @@
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
           <h2>Portfolio</h2>
-          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+          <p>A selection of my recent web development projects — from e-commerce platforms and REST APIs to custom websites and branding.</p>
         </div>
         <!-- End Section Title -->
 
@@ -128,129 +78,198 @@
           <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
             <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-strategy">Strategy</li>
-              <li data-filter=".filter-finance">Finance</li>
-              <li data-filter=".filter-operations">Operations</li>
-              <li data-filter=".filter-technology">Technology</li>
+              <li data-filter=".filter-ecommerce">E‑commerce</li>
+              <li data-filter=".filter-blog">Blog</li>
+              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-api">API</li>
             </ul>
             <!-- End Portfolio Filters -->
 
             <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+              <!-- Regal Mehrad (E-commerce) -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ecommerce">
                 <div class="portfolio-card">
                   <div class="portfolio-img">
-                    <img src="{% static 'assets/img/portfolio/portfolio-1.webp' %}" alt="Portfolio Item" class="img-fluid" />
+                    <img src="{% static 'assets/img/portfolio/portfolio-1.webp' %}" alt="Regal Mehrad" class="img-fluid" />
                     <div class="portfolio-overlay">
                       <a href="{% static 'assets/img/portfolio/portfolio-1.webp' %}" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
                       <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                     </div>
                   </div>
                   <div class="portfolio-info">
-                    <h4>Business Growth Strategy</h4>
-                    <p>Strategic Planning</p>
+                    <h4>Regal Mehrad</h4>
+                    <p>E‑commerce Platform</p>
                     <div class="portfolio-tags">
-                      <span>Strategy</span>
-                      <span>Consulting</span>
+                      <span>Django</span>
+                      <span>Payment Integration</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
+              <!-- Satida Decor (E-commerce) -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ecommerce">
                 <div class="portfolio-card">
                   <div class="portfolio-img">
-                    <img src="{% static 'assets/img/portfolio/portfolio-2.webp' %}" alt="Portfolio Item" class="img-fluid" />
+                    <img src="{% static 'assets/img/portfolio/portfolio-2.webp' %}" alt="Satida Decor" class="img-fluid" />
                     <div class="portfolio-overlay">
                       <a href="{% static 'assets/img/portfolio/portfolio-2.webp' %}" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
                       <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                     </div>
                   </div>
                   <div class="portfolio-info">
-                    <h4>Financial Restructuring</h4>
-                    <p>Financial Advisory</p>
+                    <h4>Satida Decor</h4>
+                    <p>Home Decor Store</p>
                     <div class="portfolio-tags">
-                      <span>Finance</span>
-                      <span>Investment</span>
+                      <span>Django</span>
+                      <span>Product Catalog</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-operations">
+              <!-- Goriila Shop (E-commerce) -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ecommerce">
                 <div class="portfolio-card">
                   <div class="portfolio-img">
-                    <img src="{% static 'assets/img/portfolio/portfolio-3.webp' %}" alt="Portfolio Item" class="img-fluid" />
+                    <img src="{% static 'assets/img/portfolio/portfolio-3.webp' %}" alt="Goriila Shop" class="img-fluid" />
                     <div class="portfolio-overlay">
                       <a href="{% static 'assets/img/portfolio/portfolio-3.webp' %}" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
                       <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                     </div>
                   </div>
                   <div class="portfolio-info">
-                    <h4>Supply Chain Optimization</h4>
-                    <p>Operations Management</p>
+                    <h4>Goriila Shop</h4>
+                    <p>Urban Streetwear</p>
                     <div class="portfolio-tags">
-                      <span>Operations</span>
-                      <span>Logistics</span>
+                      <span>Django</span>
+                      <span>Cart & Checkout</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-technology">
+              <!-- E-commerce API (API) -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-api">
                 <div class="portfolio-card">
                   <div class="portfolio-img">
-                    <img src="{% static 'assets/img/portfolio/portfolio-4.webp' %}" alt="Portfolio Item" class="img-fluid" />
+                    <img src="{% static 'assets/img/portfolio/portfolio-4.webp' %}" alt="E-commerce API" class="img-fluid" />
                     <div class="portfolio-overlay">
                       <a href="{% static 'assets/img/portfolio/portfolio-4.webp' %}" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
                       <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                     </div>
                   </div>
                   <div class="portfolio-info">
-                    <h4>Digital Transformation</h4>
-                    <p>Technology Consulting</p>
+                    <h4>E‑commerce API</h4>
+                    <p>RESTful Backend</p>
                     <div class="portfolio-tags">
-                      <span>Technology</span>
-                      <span>Innovation</span>
+                      <span>Django REST</span>
+                      <span>JWT Auth</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-strategy">
+              <!-- Product 1 (Web) -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
                 <div class="portfolio-card">
                   <div class="portfolio-img">
-                    <img src="{% static 'assets/img/portfolio/portfolio-5.webp' %}" alt="Portfolio Item" class="img-fluid" />
+                    <img src="{% static 'assets/img/portfolio/portfolio-5.webp' %}" alt="Product 1" class="img-fluid" />
                     <div class="portfolio-overlay">
                       <a href="{% static 'assets/img/portfolio/portfolio-5.webp' %}" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
                       <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                     </div>
                   </div>
                   <div class="portfolio-info">
-                    <h4>Market Expansion</h4>
-                    <p>Strategic Planning</p>
+                    <h4>Product 1</h4>
+                    <p>Custom Web App</p>
                     <div class="portfolio-tags">
-                      <span>Strategy</span>
-                      <span>Growth</span>
+                      <span>Django</span>
+                      <span>Bootstrap</span>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-finance">
+              <!-- Product 2 (Web) -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
                 <div class="portfolio-card">
                   <div class="portfolio-img">
-                    <img src="{% static 'assets/img/portfolio/portfolio-6.webp' %}" alt="Portfolio Item" class="img-fluid" />
+                    <img src="{% static 'assets/img/portfolio/portfolio-6.webp' %}" alt="Product 2" class="img-fluid" />
                     <div class="portfolio-overlay">
                       <a href="{% static 'assets/img/portfolio/portfolio-6.webp' %}" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
                       <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
                     </div>
                   </div>
                   <div class="portfolio-info">
-                    <h4>Investment Strategy</h4>
-                    <p>Financial Advisory</p>
+                    <h4>Product 2</h4>
+                    <p>Branding & Web</p>
                     <div class="portfolio-tags">
-                      <span>Finance</span>
-                      <span>Investment</span>
+                      <span>HTML/CSS</span>
+                      <span>Brand Identity</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product 3 (Web) -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <img src="{% static 'assets/img/portfolio/portfolio-1.webp' %}" alt="Product 3" class="img-fluid" />
+                    <div class="portfolio-overlay">
+                      <a href="{% static 'assets/img/portfolio/portfolio-1.webp' %}" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                      <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                    </div>
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Product 3</h4>
+                    <p>Full‑Stack Project</p>
+                    <div class="portfolio-tags">
+                      <span>Django</span>
+                      <span>PostgreSQL</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Branding 2 (Web) -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <img src="{% static 'assets/img/portfolio/portfolio-2.webp' %}" alt="Branding 2" class="img-fluid" />
+                    <div class="portfolio-overlay">
+                      <a href="{% static 'assets/img/portfolio/portfolio-2.webp' %}" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                      <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                    </div>
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Branding 2</h4>
+                    <p>Corporate Identity</p>
+                    <div class="portfolio-tags">
+                      <span>Branding</span>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Branding 3 (Web) -->
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+                <div class="portfolio-card">
+                  <div class="portfolio-img">
+                    <img src="{% static 'assets/img/portfolio/portfolio-3.webp' %}" alt="Branding 3" class="img-fluid" />
+                    <div class="portfolio-overlay">
+                      <a href="{% static 'assets/img/portfolio/portfolio-3.webp' %}" class="glightbox portfolio-lightbox"><i class="bi bi-plus"></i></a>
+                      <a href="#" class="portfolio-details-link"><i class="bi bi-link"></i></a>
+                    </div>
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Branding 3</h4>
+                    <p>Visual Identity</p>
+                    <div class="portfolio-tags">
+                      <span>Logo Design</span>
+                      <span>Style Guide</span>
                     </div>
                   </div>
                 </div>
