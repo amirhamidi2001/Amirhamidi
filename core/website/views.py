@@ -2,7 +2,7 @@ import os
 
 from django.conf import settings
 from django.contrib import messages
-from django.http import Http404, HttpResponse
+from django.http import FileResponse, Http404, HttpResponse
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import View
@@ -82,3 +82,24 @@ class Custom404View(View):
     def get(self, request, exception=None):
         """Render the custom 404 page."""
         return render(request, self.template_name, status=404)
+
+
+class DownloadResumeView(View):
+    """
+    Class-based view to serve a resume PDF file for download.
+    Forces download via Content-Disposition header.
+    """
+
+    def get(self, request, *args, **kwargs):
+        file_path = os.path.join(settings.MEDIA_ROOT, "amir-hamidi.pdf")
+
+        if not os.path.exists(file_path):
+            raise Http404("Resume file not found.")
+
+        file_handle = open(file_path, "rb")
+
+        response = FileResponse(file_handle, content_type="application/pdf")
+
+        response["Content-Disposition"] = 'attachment; filename="resume.pdf"'
+
+        return response

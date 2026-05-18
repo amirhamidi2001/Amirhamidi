@@ -11,4 +11,7 @@ urlpatterns = [
     path("services/", views.ServicesView.as_view(), name="services"),
     path("portfolio/", views.PortfolioView.as_view(), name="portfolio"),
     path("contact/", views.ContactView.as_view(), name="contact"),
+    path(
+        "download-resume/", views.DownloadResumeView.as_view(), name="download_resume"
+    ),
 ]
